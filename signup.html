@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register form</title>
+        <link rel="stylesheet" type="text/css" href="signup.css">
+    </head>
+       <body>
+        <div class="Register-form">
+            <h1>Register Now</h1>
+            <form action="php/signup.php" method="POST">
+                <input name="fname" type="First Name" class="input-box" placeholder="Your First Name" required>
+                <input name="lname" type="Last Name " class="input-box" placeholder="Your Last Name" required>
+                <input name="email" type="email" class="input-box" placeholder="Your Email"pattern="[s][1][7]\d{4}@rguktsklm.ac.in" required>
+                <input name="password1" type="password" class="input-box" placeholder="Your password" autocomplete="off"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                <input name="password2" type="password" class="input-box" placeholder="confirm your password" autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                <button type="submit" class="signup-btn">Sign up</button> 
+                 <p>Do you have an account?<a href="index.html">Login</a></p>
+            </form>
+        </div>
+    </body>
+</html>
